@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Explain Kubernetes readiness probes",
+    "route": "local_llm",
+    "policy_reason": "accepted",
+    "answer_chars": 507,
+    "sources": [],
+    "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+    "timing": {
+      "decision_ms": 565.75,
+      "generation_ms": 5074.84,
+      "total_ms": 5642.99
+    }
+  },
+  {
+    "question": "How do I set up this router in live mode?",
+    "route": "retrieve",
+    "policy_reason": "accepted",
+    "answer_chars": 346,
+    "sources": [
+      "operations.md",
+      "setup.md"
+    ],
+    "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+    "timing": {
+      "decision_ms": 648.16,
+      "generation_ms": 5355.72,
+      "total_ms": 6004.17
+    }
+  },
+  {
+    "question": "Fix the broken deployment",
+    "route": "clarify",
+    "policy_reason": "needs_context",
+    "answer_chars": 173,
+    "sources": [],
+    "model": null,
+    "timing": {
+      "decision_ms": 562.53,
+      "generation_ms": 0.01,
+      "total_ms": 562.75
+    }
+  },
+  {
+    "question": "What is the router output token limit?",
+    "route": "configuration",
+    "policy_reason": "deterministic_allowlist",
+    "answer_chars": 63,
+    "sources": [],
+    "model": null,
+    "timing": {
+      "decision_ms": 0,
+      "generation_ms": 0,
+      "total_ms": 0
+    }
+  }
+]

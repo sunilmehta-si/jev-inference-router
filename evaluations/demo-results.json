@@ -1,0 +1,476 @@
+{
+  "created_utc": "2026-10-06T07:07:20.238670+00:00",
+  "mode": "demo",
+  "dataset": "24 manually labeled synthetic examples; fixed demonstration suite, not external validation",
+  "python": "3.14.7",
+  "typesafe_sdk": "0.7.2",
+  "confidence_threshold": 0.65,
+  "jev_or_demo": {
+    "cases": 24,
+    "successful_requests": 24,
+    "correct": 22,
+    "accuracy_over_all_cases": 0.9167,
+    "latency_p50_ms": 0.0,
+    "latency_p95_ms": 0.0,
+    "confusion_matrix": {
+      "local_llm": {
+        "local_llm": 8,
+        "retrieve": 0,
+        "clarify": 0
+      },
+      "retrieve": {
+        "local_llm": 0,
+        "retrieve": 8,
+        "clarify": 0
+      },
+      "clarify": {
+        "local_llm": 2,
+        "retrieve": 0,
+        "clarify": 6
+      }
+    }
+  },
+  "rules": {
+    "cases": 24,
+    "successful_requests": 24,
+    "correct": 22,
+    "accuracy_over_all_cases": 0.9167,
+    "latency_p50_ms": 0.0,
+    "latency_p95_ms": 0.0,
+    "confusion_matrix": {
+      "local_llm": {
+        "local_llm": 8,
+        "retrieve": 0,
+        "clarify": 0
+      },
+      "retrieve": {
+        "local_llm": 0,
+        "retrieve": 8,
+        "clarify": 0
+      },
+      "clarify": {
+        "local_llm": 2,
+        "retrieve": 0,
+        "clarify": 6
+      }
+    }
+  },
+  "accepted_nonclarify_count": 18,
+  "accepted_nonclarify_accuracy": 0.8889,
+  "measured_input_tokens": 0,
+  "reversed_input_tokens": 0,
+  "estimated_jev_cost_usd": 0.0,
+  "pricing_note": "Estimate at documented $0.042/M input tokens, excludes retries and account-specific pricing",
+  "option_order_checks": 0,
+  "option_order_disagreements": 0,
+  "results": [
+    {
+      "id": "general-01",
+      "expected": "local_llm",
+      "route": "local_llm",
+      "selected_route": "local_llm",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 1.0,
+        "retrieve": 0.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "general-02",
+      "expected": "local_llm",
+      "route": "local_llm",
+      "selected_route": "local_llm",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 1.0,
+        "retrieve": 0.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "general-03",
+      "expected": "local_llm",
+      "route": "local_llm",
+      "selected_route": "local_llm",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 1.0,
+        "retrieve": 0.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "general-04",
+      "expected": "local_llm",
+      "route": "local_llm",
+      "selected_route": "local_llm",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 1.0,
+        "retrieve": 0.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "general-05",
+      "expected": "local_llm",
+      "route": "local_llm",
+      "selected_route": "local_llm",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 1.0,
+        "retrieve": 0.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "general-06",
+      "expected": "local_llm",
+      "route": "local_llm",
+      "selected_route": "local_llm",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 1.0,
+        "retrieve": 0.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "general-07",
+      "expected": "local_llm",
+      "route": "local_llm",
+      "selected_route": "local_llm",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 1.0,
+        "retrieve": 0.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "general-08",
+      "expected": "local_llm",
+      "route": "local_llm",
+      "selected_route": "local_llm",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 1.0,
+        "retrieve": 0.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "docs-01",
+      "expected": "retrieve",
+      "route": "retrieve",
+      "selected_route": "retrieve",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 1.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "docs-02",
+      "expected": "retrieve",
+      "route": "retrieve",
+      "selected_route": "retrieve",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 1.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "docs-03",
+      "expected": "retrieve",
+      "route": "retrieve",
+      "selected_route": "retrieve",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 1.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "docs-04",
+      "expected": "retrieve",
+      "route": "retrieve",
+      "selected_route": "retrieve",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 1.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "docs-05",
+      "expected": "retrieve",
+      "route": "retrieve",
+      "selected_route": "retrieve",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 1.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "docs-06",
+      "expected": "retrieve",
+      "route": "retrieve",
+      "selected_route": "retrieve",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 1.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "docs-07",
+      "expected": "retrieve",
+      "route": "retrieve",
+      "selected_route": "retrieve",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 1.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "docs-08",
+      "expected": "retrieve",
+      "route": "retrieve",
+      "selected_route": "retrieve",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 1.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "clarify-01",
+      "expected": "clarify",
+      "route": "clarify",
+      "selected_route": "clarify",
+      "policy_reason": "needs_context",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 0.0,
+        "clarify": 1.0
+      },
+      "needs_context": 1.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "clarify-02",
+      "expected": "clarify",
+      "route": "clarify",
+      "selected_route": "clarify",
+      "policy_reason": "needs_context",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 0.0,
+        "clarify": 1.0
+      },
+      "needs_context": 1.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "clarify-03",
+      "expected": "clarify",
+      "route": "clarify",
+      "selected_route": "clarify",
+      "policy_reason": "needs_context",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 0.0,
+        "clarify": 1.0
+      },
+      "needs_context": 1.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "clarify-04",
+      "expected": "clarify",
+      "route": "clarify",
+      "selected_route": "clarify",
+      "policy_reason": "needs_context",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 0.0,
+        "clarify": 1.0
+      },
+      "needs_context": 1.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "clarify-05",
+      "expected": "clarify",
+      "route": "clarify",
+      "selected_route": "clarify",
+      "policy_reason": "needs_context",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 0.0,
+        "clarify": 1.0
+      },
+      "needs_context": 1.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "clarify-06",
+      "expected": "clarify",
+      "route": "local_llm",
+      "selected_route": "local_llm",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 1.0,
+        "retrieve": 0.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "clarify-07",
+      "expected": "clarify",
+      "route": "clarify",
+      "selected_route": "clarify",
+      "policy_reason": "needs_context",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 0.0,
+        "retrieve": 0.0,
+        "clarify": 1.0
+      },
+      "needs_context": 1.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    },
+    {
+      "id": "clarify-08",
+      "expected": "clarify",
+      "route": "local_llm",
+      "selected_route": "local_llm",
+      "policy_reason": "accepted",
+      "model": "deterministic-demo-fixture",
+      "confidence": 1.0,
+      "probabilities": {
+        "local_llm": 1.0,
+        "retrieve": 0.0,
+        "clarify": 0.0
+      },
+      "needs_context": 0.0,
+      "duration_ms": 0,
+      "input_tokens": 0
+    }
+  ]
+}

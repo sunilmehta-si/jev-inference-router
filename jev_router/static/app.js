@@ -3,7 +3,7 @@ const $ = (id) => document.getElementById(id);
 let config = null, controller = null;
 const labels = {local_llm:"Local Qwen",retrieve:"Documentation + Qwen",clarify:"Clarification",configuration:"Direct configuration"};
 function node(tag, text, cls) { const e = document.createElement(tag); if(text !== undefined)e.textContent=text;if(cls)e.className=cls;return e; }
-function message(who, text) { if($("messages").querySelector(".welcome"))$("messages").replaceChildren();const e=node("div",undefined,`message ${who==="MODEL"?"model":"user"}`);e.append(node("span",who,"who"),node("div",text));$("messages").append(e);e.scrollIntoView({block:"nearest"});return e; }
+function message(who, text) { if($("messages").querySelector(".welcome"))$("messages").replaceChildren();const e=node("div",undefined,`message ${who==="MODEL"?"model":"user"}`);e.append(node("span",who,"who"),node("div",text));$("messages").append(e);$("messages").scrollTop=$("messages").scrollHeight;return e; }
 function stat(root, label, value){const row=node("div",undefined,"stat");row.append(node("span",label),node("strong",value));root.append(row);}
 function inspect(data){
   $("route").textContent=labels[data.route]||data.route;$("reason").textContent=`Policy: ${data.policy_reason.replaceAll("_"," ")}`;

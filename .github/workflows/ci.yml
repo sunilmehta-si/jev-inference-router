@@ -15,4 +15,5 @@ jobs:
       - run: pip install -e '.[dev]' -c requirements-tested.txt
       - run: ruff check . && ruff format --check . && pytest -q
       - run: python scripts/check_secrets.py
+      - run: python scripts/evaluate.py --mode demo --output /tmp/demo-evaluation.json
       - run: docker build -t jev-inference-router:ci .

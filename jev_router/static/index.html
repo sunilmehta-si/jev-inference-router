@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jev Inference Router · Sunil Mehta</title><link rel="stylesheet" href="/assets/style.css">
+<script defer src="/assets/app.js"></script></head>
+<body>
+<header><a class="brand" href="/">Jev <span>Inference Router</span></a><span id="mode" class="badge">Connecting…</span><a href="https://github.com/sunilmehta-si/jev-inference-router" target="_blank" rel="noopener">View source ↗</a></header>
+<main>
+<aside>
+<p class="eyebrow">DECIDE → ROUTE → ANSWER</p><h1>See the decision behind the answer.</h1>
+<p>Jev selects a handler. Python applies the policy. Your local GPU model writes the response.</p>
+<label for="key">Router API key</label><input id="key" type="password" autocomplete="off" placeholder="From your private .env">
+<p class="hint">Use ROUTER_API_KEY, not your TypeSafe key. It stays in this page's memory and clears on reload.</p>
+<label for="tokens">Maximum output tokens <output id="token-value">192</output></label><input id="tokens" type="range" min="16" max="512" step="16" value="192">
+<h2>Try a route</h2><div class="examples">
+<button data-question="Explain Kubernetes readiness probes">General explanation</button>
+<button data-question="How do I set up this router in live mode?">Project documentation</button>
+<button data-question="Fix the broken deployment">Missing context</button>
+<button data-question="What is the router output token limit?">Direct configuration</button>
+</div>
+<nav><a href="/docs" target="_blank" rel="noopener">API documentation ↗</a><a href="/metrics" target="_blank" rel="noopener">Prometheus metrics ↗</a></nav>
+<p class="hint" id="privacy">Loading mode…</p>
+</aside>
+<section class="chat" aria-label="Chat">
+<div class="section-title"><h2>Ask a question</h2><button id="clear" class="quiet">Clear</button></div>
+<p class="hint">Each question is independent. No conversation history is sent or stored.</p>
+<div id="messages" aria-live="polite"><div class="welcome"><div class="orb">↗</div><h3>One question. A visible path.</h3><p>Choose an example or enter your question below.</p></div></div>
+<form id="chat-form"><label for="question" class="sr-only">Your question</label><textarea id="question" maxlength="4000" rows="3" placeholder="Ask about a concept, this project, or an issue…" required></textarea>
+<div class="composer-footer"><span id="status" role="status">Ready</span><button id="stop" type="button" hidden>Stop</button><button id="send" type="submit">Send question ↗</button></div></form>
+<p id="error" role="alert" hidden></p>
+</section>
+<section class="inspect" aria-label="Decision inspector"><p class="eyebrow">DECISION INSPECTOR</p><h2 id="route">Waiting for a question</h2><p id="reason" class="hint">Routing results will appear here.</p><div id="decision"></div><div id="timing"></div><div id="sources"></div></section>
+</main><footer>Built by Sunil Mehta · TypeSafe Jev + local Qwen inference · Portfolio demonstration</footer>
+</body></html>

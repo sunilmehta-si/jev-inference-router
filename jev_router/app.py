@@ -189,7 +189,7 @@ def create_app(settings=None, decider=None, generator=None):
                         "decision": None,
                         "policy_reason": outcome,
                         "sources": [],
-                        "answer": "Jev is unavailable. Retry later; no model decision was accepted.",
+                        "answer": "Jev is unavailable. Retry later; no decision was accepted.",
                         "timing": {"total_ms": round((time.perf_counter() - start) * 1000, 2)},
                         "estimated_jev_cost_usd": None,
                         "generation_model": None,

@@ -107,3 +107,12 @@ terms. The official SDK is used as a dependency, not copied into this repository
 - [TypeSafe API](https://docs.typesafe.ai/api)
 - [Jev model limitations](https://docs.typesafe.ai/model-jaggedness/jev-1.13)
 - [Official Python SDK](https://github.com/typesafe-ai/typesafe-sdk-python)
+
+## Related projects
+
+Other open-source infrastructure work by [Sunil Mehta](https://github.com/sunilmehta-si):
+
+- [agentic-code-review-tool](https://github.com/sunilmehta-si/agentic-code-review-tool): Scanner-grounded AI code review for the whole pull request: app, infrastructure and AI/agent code.
+- [k8s-gpu-scheduler-benchmark](https://github.com/sunilmehta-si/k8s-gpu-scheduler-benchmark): Benchmarks Kubernetes GPU schedulers (default, Kueue, Volcano, KAI) in simulation and on real clusters.
+- [ai-devsecops-cicd](https://github.com/sunilmehta-si/ai-devsecops-cicd): Reference DevSecOps pipeline for LLM and AI-agent services: AI security tests, SBOM/AI-BOM, signing, admission policy.
+- [llm-inference-platform](https://github.com/sunilmehta-si/llm-inference-platform): GPU-backed LLM serving with a streaming gateway, monitoring and reproducible benchmarks.

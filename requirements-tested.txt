@@ -21,7 +21,7 @@ Pygments==2.21.0
 pytest==9.1.1
 pytest-asyncio==1.4.0
 python-dotenv==1.2.4
-ruff==0.16.10
+ruff==0.17.0
 starlette==1.7.0
 tenacity==9.2.1
 truststore==0.10.4
